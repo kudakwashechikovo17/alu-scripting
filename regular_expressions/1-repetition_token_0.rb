@@ -1,5 +1,3 @@
 #!/usr/bin/env ruby
-str = ARGV[0]
-if m = str.match(/hbt*n/)
-  puts m[0]
-end
+# 1-repetition_token_0.rb
+puts ARGV[0].scan(/^hbt{2,5}n$/).join
